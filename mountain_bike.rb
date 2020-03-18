@@ -11,7 +11,6 @@ class MountainBike < AbstractBike
   end
 
   def prepare
-    puts "Cleaning..."
     puts "Adjusting suspension..."
   end
 
