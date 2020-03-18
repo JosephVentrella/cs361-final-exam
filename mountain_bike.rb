@@ -1,16 +1,5 @@
 require_relative 'roll_pack'
-
-class AbstractBike
-
-  def initialize
-    puts "Raise error DONT MAKE THIS KIND OF BIKE"
-  end
-
-  def setup
-    prepare
-  end
-
-end
+require_relative 'abstract_bike' 
 
 class MountainBike < AbstractBike
 
