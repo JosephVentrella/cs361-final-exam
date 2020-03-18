@@ -1,6 +1,6 @@
 require_relative 'pannier'
 
-class RoadBike
+class RoadBike <AbstractBike
 
   def initialize
     @panniers = [Pannier.new, Pannier.new]

@@ -1,6 +1,18 @@
 require_relative 'roll_pack'
 
-class MountainBike
+class AbstractBike
+
+  def initialize
+    puts "Raise error DONT MAKE THIS KIND OF BIKE"
+  end
+
+  def setup
+    prepare
+  end
+
+end
+
+class MountainBike < AbstractBike
 
   def initialize
     @luggage = RollPack.new
@@ -9,11 +21,8 @@ class MountainBike
     @hourly_rate = 10
   end
 
-  def clean
+  def prepare
     puts "Cleaning..."
-  end
-
-  def adjust_suspension
     puts "Adjusting suspension..."
   end
 
